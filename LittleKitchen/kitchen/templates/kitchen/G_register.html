@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/G_register.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="register">
+        <div class="back">
+            <div class="third"></div>
+            <div class="second"></div>
+            <form action="">
+                <div class="first">
+                    <div class="info">
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="img/G_ab.png" alt="">
+                            </div>
+                            <input type="text" name="username" placeholder="请填写您的用户名">
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="img/G_ab.png" alt="">
+                            </div>
+                            <input type="text" name="tel" placeholder="请填写您的手机号码">
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <div class="point"></div>
+                            </div>
+                            <input type="text" name="code" placeholder="请填写您的验证码" style="width:3rem;">
+                            <div class="code">验证码</div>
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="img/G_ac.png" alt="">
+                            </div>
+                            <input type="text" name="password" placeholder="请设置您的密码">
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="img/G_ac.png" alt="">
+                            </div>
+                            <input type="text" name="passwords" placeholder="重复您的密码 以便于进行确认">
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="go">立即登录</a>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    let passwords=$('[name=passwords]')
+    let register=$('.go')
+    passwords.bind('input propertychange', function() {
+        register.css('background','#FA780A')
+    });
+</script>
+</html>
