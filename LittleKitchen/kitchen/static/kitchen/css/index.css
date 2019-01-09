@@ -152,9 +152,20 @@ header .right img{
 .season{
     margin-top: 0.54rem;
 }
-.season h2{
+.season .top{
+    display: flex;
+    justify-content: space-between;
+}
+.season top h2{
     font-size: 0.26rem;
     color: #303030;
+}
+.season .top p{
+    font-size: 0.19rem;
+    color: #BCE1C0;
+}
+.season .top p .iconfont{
+    font-size: 0.19rem;
 }
 .season .main{
     width: 100%;
