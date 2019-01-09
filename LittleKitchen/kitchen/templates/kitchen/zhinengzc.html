@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能组菜</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/zhinengzc.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_je37tojj2n.css">
+    <link rel="stylesheet" href="{% static 'kitchen/swiper-4.4.6/dist/css/swiper.min.css' %}">
+    <script type="text/javascript" src="{% static 'kitchen/js/rem.js' %}"></script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <header>
+        <div class="title">
+            <a href="{% url 'kitchen:s_cai' %}" class="tleft">
+                <i class="iconfont icon-jiantouarrowhead7"></i>
+            </a>
+            <h2 class="tright">
+                智能组菜
+            </h2>
+        </div>
+    </header>
+    <!-- 头部结束 -->
+    <div class="bg">
+        <form method="post" action="{% url 'kitchen:zcend' %}">
+            {% csrf_token %}
+            <div class="ssou">
+                <input type="text" name="shicai" id="sc" placeholder="请输入食材 将食材用 空格 隔开">
+                <span class="iconfont icon-sousuo"></span>
+            </div>
+            <button type="submit" class="anniu" >去组菜</button>
+        </form>
+    </div>
+    
+</body>
+</html>

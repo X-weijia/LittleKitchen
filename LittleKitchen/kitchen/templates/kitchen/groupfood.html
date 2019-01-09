@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>组菜结果</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/groupfood.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_cog7y7phd25.css">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<body>
+    <!-- 头部信息 -->
+    <header>
+        <div class="title">
+            <a href="{% url 'kitchen:s_cai' %}" class="tleft">
+                <i class="iconfont icon-jiantouarrowhead7"></i>
+            </a>
+            <h2 class="tright">
+                组菜结果
+            </h2>
+        </div>
+    </header>
+    <!-- 内容主体 -->
+    <main>
+        <ul>
+            {% for item in sc %}
+            <li class="list">
+                <img src="{{ item.img }}" alt="">
+                <div class="info">
+                    <div class="ileft">
+                        <h3 style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:18px;color:#737373;">{{ item.name }}</h3>
+                        <div style="height:0.35rem;display:flex;align-items:center;">
+                            <img src="{% static 'kitchen/image/tou.png' %}" alt="">
+                            <h4 style="font-size:12px;margin-left: 0.15rem;color: #b8b8b8;">乐悠厨房</h4>
+                        </div>
+                        <div class="label">
+                            {% if bqlen == 1 %}
+                            <div class="ls">{{ biaoqian.0 }}</div>
+                            {% else %}
+                            <div class="ls">{{ biaoqian.0 }}</div>
+                            <div class="ls">{{ biaoqian.1 }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="iright">
+                        <div style="display:flex;justify-content: flex-end; margin: 0.9rem 0 0 0.55rem;">
+                            <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        </div>
+                        <h4>匹配度: <span>99%</span></h4>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>

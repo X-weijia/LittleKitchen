@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     {% load static %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -51,9 +50,9 @@
         <section class="change">
             <div class="box">
                 <button class="aptitude">
-                    <a href=""> 
+                    <a href="{% url 'kitchen:s_cai' %}">
                         <img src="{% static 'kitchen/img/change2_l.gif' %}" alt="">
-                        <span>智能煮菜</span> 
+                        <span>智能组菜</span>
                     </a>
                 </button>
                 <button class="menu">

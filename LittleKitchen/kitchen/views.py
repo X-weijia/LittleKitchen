@@ -1,5 +1,8 @@
-from django.shortcuts import render
-
+from django.shortcuts import render,redirect,reverse
+from .form import Login,Register
+from .models import User,Menu
+from django.contrib.auth import login as login1
+from django.db.models import Q
 # Create your views here.
 
 # 闪屏页一
@@ -16,12 +19,41 @@ def index_two(request):
 def index(request):
     return render(request,'kitchen/index.html')
 
+# 去做菜
+def s_cai(request):
+    if request.method == "GET":
+        return render(request,'kitchen/zhinengzc.html')
 
+# 组菜结果
+def zcend(request):
+    if request.method == "GET":
+        return render(request,'kitchen/groupfood.html')
+    else:
+        shicai = request.POST.get('shicai', None)
+        shicai = shicai.split(' ')
+        if len(shicai) == 1:
+            sc = Menu.objects.filter(Q(ingres__contains=shicai[0])).values()[0:20]
+            biaoqian = {"0": shicai[0]}
+            bqlen = len(biaoqian)
+        elif len(shicai) == 2:
+            sc = Menu.objects.filter(Q(ingres__contains=shicai[0]), Q(ingres__contains=shicai[1])).values()[0:20]
+            biaoqian = {"0": shicai[0], "1": shicai[1]}
+            bqlen = len(biaoqian)
+        elif len(shicai) == 3:
+            sc = Menu.objects.filter(Q(ingres__contains=shicai[0]), Q(ingres__contains=shicai[1]),
+                                     Q(ingres__contains=shicai[2])).values()[0:20]
+            biaoqian = {"0":shicai[0],"1":shicai[1],"2":shicai[2]}
+            bqlen = len(biaoqian)
+        return render(request, 'kitchen/groupfood.html',{'sc':sc,'biaoqian':biaoqian,'bqlen':bqlen})
+
+# 个人中心
+def person(request):
+    return render(request,'kitchen/person.html')
 ########################################################################################
 
 
 
-############################# 古耀华 ################################
+############################# 古耀华  登录注册 #########################################
 #登录
 def login(request):
     if request.method=="GET":
@@ -69,4 +101,4 @@ def register(request):
 #     User.objects.filter(username=user).update(is_email=1)
 #     return redirect("/kitchen/")
 
-########################################################################
+################################################################################################

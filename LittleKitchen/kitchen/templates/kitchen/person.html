@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/person.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_cog7y7phd25.css">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<body>
+    <!-- 头部信息 -->
+    <header>
+        <div class='title'>
+            <div class="tleft">
+                <img class="photo" src="{% static 'kitchen/image/photo.png' %}" alt="">
+            </div>
+            <div class="tright">
+                <h3 style="font-size: 18px;
+                            color:#f32d69;
+                            margin-top:0.12rem;">
+                            小小厨
+                        </h3>
+                <p style="font-size:14px;
+                            color:#fabecc;
+                            margin-top:0.12rem;">
+                            专为美食爱好者和家庭主妇定制
+                        </p>
+                <div class="states">
+                    <div class="gz">
+                        <div style="width:0.06rem;height:0.06rem;border-radius:50%;background-color:#3cc362;margin-top:0.14rem;"></div>
+                        <h4 style="font-size:12px;color:#cacaca;margin-left:0.1rem;">我的关注</h4>
+                        <h4 style="font-size:12px;color:#fdc238;margin-left:0.1rem;">25</h4>
+                    </div>
+                    <div class="fs">
+                        <div style="width:0.06rem;height:0.06rem;border-radius:50%;background-color:#3cc362;margin-top:0.14rem;"></div>
+                        <h4 style="font-size:12px;color:#cacaca;margin-left:0.1rem;">我的粉丝</h4>
+                        <h4 style="font-size:12px;color:#fdc238;margin-left:0.1rem;">42</h4>
+                    </div>
+                    <div class="dt">
+                        <div style="width:0.06rem;height:0.06rem;border-radius:50%;background-color:#3cc362;margin-top:0.14rem;"></div>
+                        <h4 style="font-size:12px;color:#cacaca;margin-left:0.1rem;">我的动态</h4>
+                        <h4 style="font-size:12px;color:#fdc238;margin-left:0.1rem;">67</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 主体内容 -->
+    <main>
+        <ul>
+            <li class="list">
+                <img src="{% static 'kitchen/image/zhibo.png' %}" alt="">
+                <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">直播</h3>
+                <a href="">
+                    <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
+                </a>
+            </li>
+            <li class="list">
+                <img src="{% static 'kitchen/image/dingdan.png' %}" alt="">
+                <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">订单</h3>
+                <a href="">
+                    <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
+                </a>
+            </li>
+            <li class="list">
+                <img src="{% static 'kitchen/image/qianbao.png' %}" alt="">
+                <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">钱包</h3>
+                <a href="">
+                    <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
+                </a>            
+            </li>
+            <li class="list">
+                <img src="{% static 'kitchen/image/che.png' %}" alt="">
+                <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">购物车</h3>
+                <a href="">
+                    <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
+                </a>            
+            </li>
+            <li class="list">
+                <img src="{% static 'kitchen/image/shoucang.png' %}" alt="">
+                <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">收藏</h3>
+                <a href="">
+                    <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
+                </a>          
+                </li>
+            <li class="list">
+                <img src="{% static 'kitchen/image/shezhi.png' %}" alt="">
+                <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">设置</h3>
+                <a href="">
+                    <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
+                </a>            
+            </li>
+        </ul>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <ul>
+            <li class="list">
+                <a href="">
+                    <img src="{% static 'kitchen/image/sy.png' %}" alt="">
+                    <h5 style="font-size:14px;color:#ccc;">首页</h5>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <img src="{% static 'kitchen/image/fx.png' %}" alt="">
+                    <h5 style="font-size:14px;color:#ccc;">发现</h5>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <img src="{% static 'kitchen/image/sc.png' %}" alt="">
+                    <h5 style="font-size:14px;color:#ccc;">商城</h5>
+                </a>
+            </li>
+            <li class="list">
+                <a href="javascript:;">
+                    <img src="{% static 'kitchen/image/wd.png' %}" alt="">
+                    <h5 style="font-size:14px;color:#ccc;">我的</h5>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
