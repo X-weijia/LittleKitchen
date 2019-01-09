@@ -1,12 +1,12 @@
 from django.db import models
 from db.basemodels import BaseModel
+from django.contrib.auth.models import User
 
 # Create your models here.
 # 用户表
-class User(BaseModel):
-    name = models.CharField(verbose_name='用户名',max_length=20)
+class UserInfo(BaseModel):
+    name = models.OneToOneField(to=User, default="", on_delete=models.CASCADE)
     phone = models.IntegerField(verbose_name='手机号')
-    password = models.IntegerField(verbose_name='密码')
     type = models.IntegerField(verbose_name='类型',choices=(
         (0,'用户'),
         (1,'商家')
@@ -17,7 +17,7 @@ class User(BaseModel):
         verbose_name_plural = "用户表"
 
 # 菜谱表
-class Menu(BaseModel):
+class Menu(models.Model):
     name = models.CharField(verbose_name='菜名',max_length=50)
     img = models.ImageField(verbose_name='图像',default='')
     ingres = models.TextField(verbose_name='食材',max_length=50)
@@ -26,13 +26,6 @@ class Menu(BaseModel):
     bq = models.CharField(verbose_name='标签',max_length=50,default='')
     class Meta:
         verbose_name_plural = "菜谱表"
-
-# 菜谱分类
-class Mtype(BaseModel):
-    m_id = models.ForeignKey(verbose_name='菜谱ID',to=Menu,on_delete=models.CASCADE)
-    name = models.CharField(verbose_name='类名',max_length=20)
-    class Meta:
-        verbose_name_plural = "菜谱分类表"
 
 # 动态表
 class Dynamic(BaseModel):

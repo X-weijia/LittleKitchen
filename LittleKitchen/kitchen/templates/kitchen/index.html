@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    {% load static %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title首页</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>首页</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/index.css' %}">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_udode20327p.css">
-    <link rel="stylesheet" href="swiper-4.4.6/dist/css/swiper.min.css">
-    <script type="text/javascript" src="js/rem.js"></script>
+    <link rel="stylesheet" href="{% static '/kitchen/swiper-4.4.6/dist/css/swiper.min.css' %}">
+    <script type="text/javascript" src="{% static 'kitchen/js/rem.js' %}"></script>
 </head>
 <body>
     <div class="bg">
@@ -20,7 +22,7 @@
             </div>
             <div class="min">
                 <input type="text" name="" id="" placeholder="请输入您要搜索的内容">
-                <img src="img/index2_l.gif" alt="">
+                <img src="{% url 'kitchen/img/index2_l.gif' %}" alt="">
             </div>
             <div class="right">
                 <img src="img/index1_l.gif" alt="">
@@ -172,12 +174,11 @@
         </footer>
         <!-- 底部结束 -->
     </div>
-    <script src="swiper-4.4.6/dist/js/swiper.min.js"></script>
+    <script src="{% static 'kitchen/swiper-4.4.6/dist/js/swiper.min.js' %}"></script>
     <script>        
         var mySwiper = new Swiper ('.swiper-container', {
           autoplay: true,//可选选项，自动滑动
           loop: true, // 循环模式选项
-          
           // 如果需要分页器
           pagination: {
             el: '.swiper-pagination',

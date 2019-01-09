@@ -10,3 +10,7 @@ a{
 img{
     display:block;
 }
+body{
+    background-color: #f7f5f5;
+    font-family: '苹方','微软雅黑';
+}
