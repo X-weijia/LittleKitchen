@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d80e1745-acf9-4ff0-8316-d8169da2c70a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,14 +139,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="154" />
-          <entry key="txt" value="31" />
+          <entry key="md" value="213" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="154" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Markdown" value="213" />
+          <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -180,8 +179,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="322">
-                <caret line="84" selection-start-line="84" selection-end-line="84" />
+              <first_editor relative-caret-position="348">
+                <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
               </first_editor>
               <second_editor />
             </state>
@@ -422,11 +421,19 @@
       <option name="project" value="LOCAL" />
       <updated>1550489083451</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="four1 commit">
+      <created>1550494702625</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550494702626</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.02529762" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -455,7 +462,8 @@
     <MESSAGE value="two commit" />
     <MESSAGE value="three commit" />
     <MESSAGE value="four commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="four commit" />
+    <MESSAGE value="four1 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="four1 commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/login.html">
@@ -759,16 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <marker date="1547428393934" expanded="true" signature="3795:3797" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kitchen/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
@@ -792,10 +790,20 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="432">
-            <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <first_editor relative-caret-position="348">
+            <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+            <marker date="1547428393934" expanded="true" signature="3795:3797" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
