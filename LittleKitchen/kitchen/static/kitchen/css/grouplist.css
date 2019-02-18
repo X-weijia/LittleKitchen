@@ -1,0 +1,100 @@
+@import url(base.css);
+
+/* 头部信息 */
+header{
+    width: auto;
+    height: 1.3rem;
+    border-bottom: 2px solid #eae9e9;
+}
+header .title{
+    width: auto;
+    height: 0.95rem;
+    padding-top: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header .title .tleft i{
+    display: block;
+    font-size: 26px;
+    color: #636262;
+    margin-left: 0.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.52rem;
+}
+header .title .tright{
+    font-size: 24px;
+    color: #898888;
+}
+/* 主题内容 */
+main{
+    width: auto;
+    height: 9rem;
+    margin-top: 0.7rem;
+}
+main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main ul .list{
+    width: 7.02rem;
+    height: 2.21rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.24rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+main ul .list img{
+    width: 1.7rem;
+    height: 1.73rem;
+    border-radius: 0.1rem;
+    margin-left: 0.24rem;
+}
+main ul .list .info{
+    width: 4.6rem;
+    height: 1.73rem;
+    margin-left: 0.34rem;
+    display: flex;
+}
+main ul .list .info .ileft{
+    width: 1.75rem;
+    height: 1.73rem;
+}
+main ul .list .info .ileft img{
+    width: 0.35rem;
+    height: 0.34rem;
+    display: block;
+    border-radius: 50%;
+    margin: 0.05rem 0 0 0;
+}
+main ul .list .info .ileft .label{
+    height: 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+}
+main ul .list .info .ileft .label .ls{
+    width: 0.8rem;
+    height: 0.4rem;
+    font-size: 12px;
+    color: #fff;
+    background-color: #fee7af;
+    border-radius: 0.2rem;
+    margin-right:0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+main ul .list .info .iright{
+    width: 1.8rem;
+    height: 1.73rem;
+    margin-left: 1.52rem;
+}
+main ul .list .info .iright h4{
+    font-size: 12px;
+    margin-top: 0.1rem;
+    color: #cacaca;
+}

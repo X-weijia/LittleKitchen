@@ -1,7 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d80e1745-acf9-4ff0-8316-d8169da2c70a" name="Default Changelist" comment="" />
+    <list default="true" id="d80e1745-acf9-4ff0-8316-d8169da2c70a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0005_menu_season.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0006_auto_20190110_1151.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0007_mtype.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0008_auto_20190110_1704.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0009_guanzhu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0010_auto_20190111_1122.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0011_shoucang.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0012_auto_20190111_1421.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/migrations/0013_auto_20190114_0847.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/DynamicDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/G_fail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/MenuClassification.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/caipuxq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/find.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/grouplist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/season.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/tuijian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/Cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/TopBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/2018年我最不喜欢的胶片相机 ROLLEI 35 classic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/food1_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/food2_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/food3_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/head1_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/icon1_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/icon2_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/icon3_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/【鬼畜改编翻唱】改革春风吹满地【抒情rap版】.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/全是牛肉啊啊啊！这大概是我吃过最敦实的肉夹馍了！.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/find/魔兽8.1嘘！无限刷坐骑刷G的方法？组建你的DH大军吧.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/主食.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/人群.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/发布图片1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/发布图片2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/场景.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/心形图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/文化.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/点赞图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/留言图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/菜式.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/转发图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/image/返回图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/Cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/TopBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/axing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/lxing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/tou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/主食.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/人群.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/发布图片1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/发布图片2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/场景.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/心形图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/文化.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/点赞图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/留言图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/菜式.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/转发图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipufl/返回图片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipuxq/icon1_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/caipuxq/icon2_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/season/ysc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/tuijian/dian_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/tuijian/tuijian1_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/tuijian/tuijian2_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/tuijian/tuijian3_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/tuijian/tuijian4_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/img/tuijian/tuijian5_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/static/kitchen/js/MenuClassification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/DynamicDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/G_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/MenuClassification.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/caipuxq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/find.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/grouplist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/popularlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/season.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/tuijian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/img/7602211495875530.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/img/u15305983391911247888fm26gp0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/kitchen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/static/kitchen/css/G_register.css" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/G_register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/static/kitchen/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/static/kitchen/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/static/kitchen/css/person.css" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/person.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/static/kitchen/css/zhinengzc.css" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/static/kitchen/css/zhinengzc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/G_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/G_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/G_wait.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/G_wait.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/flash1.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/flash1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/flash2.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/flash2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/groupfood.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/groupfood.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/templates/kitchen/zhinengzc.html" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/templates/kitchen/zhinengzc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/little_kitchen/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/little_kitchen/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/little_kitchen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/little_kitchen/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据库/littlekitchen.sql" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,93 +160,104 @@
     <session id="564975076">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="16" />
-          <entry key="html" value="17" />
+          <entry key="css" value="20" />
+          <entry key="html" value="23" />
           <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="16" />
-          <entry key="HTML" value="17" />
+          <entry key="CSS" value="20" />
+          <entry key="HTML" value="23" />
           <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="61" />
-          <entry key="html" value="1731" />
-          <entry key="py" value="1912" />
+          <entry key="css" value="105" />
+          <entry key="html" value="2316" />
+          <entry key="py" value="2395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="61" />
-          <entry key="HTML" value="1731" />
-          <entry key="Python" value="1912" />
+          <entry key="CSS" value="105" />
+          <entry key="HTML" value="2316" />
+          <entry key="Python" value="2395" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1161657717">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="964" />
+          <entry key="html" value="3125" />
+          <entry key="py" value="2454" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="964" />
+          <entry key="HTML" value="3125" />
+          <entry key="Python" value="2454" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="30" />
+          <entry key="html" value="51" />
+          <entry key="js" value="2" />
+          <entry key="py" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="30" />
+          <entry key="HTML" value="51" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Python" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="426704797">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kitchen/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="54">
+              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
-                <marker date="1547020279962" expanded="true" signature="381:384" ph="..." />
-                <marker date="1547020279962" expanded="true" signature="493:1782" ph="..." />
-                <marker date="1547020279962" expanded="true" signature="716:1782" ph="..." />
-                <marker date="1547020279962" expanded="true" signature="1732:1782" ph="..." />
+                <marker date="1547428393934" expanded="true" signature="3795:3797" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/person.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#li#0;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#li#1;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#li#2;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#li#3;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#li#4;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#4;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#li#5;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#5;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#a#0;n#li#0;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#a#0;n#li#1;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/person.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -141,8 +265,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitchen/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+            <state relative-caret-position="837">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -150,11 +274,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitchen/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="1566">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -182,11 +306,25 @@
       <find>png</find>
       <find>tou.png</find>
       <find>ileft</find>
-      <find>img</find>
       <find>images</find>
+      <find>buzhou</find>
+      <find>img/caipufl/</find>
+      <find>state</find>
+      <find>range</find>
+      <find>item.score</find>
+      <find>right</find>
+      <find>print</find>
+      <find>target</find>
+      <find>person.img</find>
+      <find>img</find>
+      <find>login</find>
+      <find>find</find>
     </findStrings>
     <replaceStrings>
       <replace>image</replace>
+      <replace>image/</replace>
+      <replace>score</replace>
+      <replace>person.photo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -199,29 +337,45 @@
         <option value="$PROJECT_DIR$/db/__init__.py" />
         <option value="$PROJECT_DIR$/little_kitchen/little_kitchen/__init__.py" />
         <option value="$PROJECT_DIR$/db/basemodels.py" />
-        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/flash2.html" />
-        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/flash1.html" />
         <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/base.css" />
-        <option value="$PROJECT_DIR$/little_kitchen/settings.py" />
-        <option value="$PROJECT_DIR$/little_kitchen/urls.py" />
-        <option value="$PROJECT_DIR$/kitchen/models.py" />
-        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/index.css" />
-        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/index.html" />
         <option value="$PROJECT_DIR$/kitchen/templates/kitchen/xuancai.html" />
         <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/groupfood.css" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/caipuxq.css" />
         <option value="$PROJECT_DIR$/kitchen/templates/kitchen/groupfood.html" />
-        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/zhinengzc.html" />
-        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/zhinengzc.css" />
-        <option value="$PROJECT_DIR$/kitchen/views.py" />
-        <option value="$PROJECT_DIR$/kitchen/urls.py" />
-        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/person.css" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/popularlist.html" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/flash1.html" />
+        <option value="$PROJECT_DIR$/kitchen/admin.py" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/index.css" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/G_register.html" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/tuijian.html" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/tuijian.css" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/season.css" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/season.html" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/index.html" />
+        <option value="$PROJECT_DIR$/little_kitchen/settings.py" />
+        <option value="$PROJECT_DIR$/little_kitchen/urls.py" />
+        <option value="$PROJECT_DIR$/kitchen/form.py" />
         <option value="$PROJECT_DIR$/kitchen/templates/kitchen/person.html" />
+        <option value="$PROJECT_DIR$/kitchen/__init__.py" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/flash2.html" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/zhinengzc.html" />
+        <option value="$PROJECT_DIR$/kitchen/models.py" />
+        <option value="$PROJECT_DIR$/kitchen/urls.py" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/grouplist.html" />
+        <option value="$PROJECT_DIR$/kitchen/views.py" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/caipuxq.html" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/find.css" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/find.html" />
+        <option value="$PROJECT_DIR$/kitchen/templates/kitchen/DynamicDetails.html" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/DynamicDetails.css" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/zhinengzc.css" />
+        <option value="$PROJECT_DIR$/kitchen/static/kitchen/css/person.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
+    <option name="x" value="-8" />
+    <option name="width" value="698" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -230,7 +384,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,45 +391,29 @@
               <item name="LittleKitchen" type="b2602c69:ProjectViewProjectNode" />
               <item name="LittleKitchen" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LittleKitchen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LittleKitchen" type="462c0819:PsiDirectoryNode" />
-              <item name="kitchen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LittleKitchen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LittleKitchen" type="462c0819:PsiDirectoryNode" />
-              <item name="kitchen" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LittleKitchen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LittleKitchen" type="462c0819:PsiDirectoryNode" />
-              <item name="kitchen" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../myblog" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\kitchen\LittleKitchen\kitchen\static\kitchen\css" />
-      <recent name="C:\Users\Administrator\Desktop\kitchen\LittleKitchen\kitchen\templates\kitchen" />
-      <recent name="C:\Users\Administrator\Desktop\kitchen\LittleKitchen\kitchen\static\kitchen\image" />
-      <recent name="C:\Users\Administrator\Desktop\kitchen\LittleKitchen\kitchen" />
-      <recent name="C:\Users\Administrator\Desktop\kitchen\LittleKitchen\kitchen\static\kitchen" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\LittleKitchen\kitchen\static\kitchen" />
       <recent name="C:\Users\Administrator\Desktop\LittleKitchen" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\kitchen1\LittleKitchen\kitchen\static\kitchen\img\caipuxq" />
+      <recent name="C:\Users\Administrator\Desktop\kitchen1\LittleKitchen\kitchen\static\kitchen\css" />
+      <recent name="C:\Users\Administrator\Desktop\kitchen1\LittleKitchen\kitchen\templates\kitchen" />
+      <recent name="C:\Users\Administrator\Desktop\kitchen1\LittleKitchen\kitchen\static\kitchen\img\season" />
+      <recent name="C:\Users\Administrator\Desktop\kitchen1\LittleKitchen\kitchen\static\kitchen\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,9 +471,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21056548" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21056548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -347,7 +483,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.11639344" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3229508" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -359,62 +495,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/little_kitchen/little_kitchen/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/db/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/little_kitchen/manage.py" />
-    <entry file="file://$PROJECT_DIR$/little_kitchen/little_kitchen/settings.py" />
-    <entry file="file://$PROJECT_DIR$/little_kitchen/little_kitchen/urls.py" />
-    <entry file="file://F:/python/Lib/site-packages/django/core/checks/urls.py" />
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/flash2.html">
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/flash1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="937">
-          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0002_menu_img.py" />
-    <entry file="file://$PROJECT_DIR$/db/basemodels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0002_auto_20190108_1647.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286" />
-      </provider>
-    </entry>
-    <entry file="file://F:/Django/Blog/blog/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/G_register.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/little_kitchen/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="189">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -425,152 +509,340 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/little_kitchen/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0004_auto_20190109_0959.py">
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/login.css">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/WeChat Files/x13111263313/Files/grouplist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/项目案例/ZaKer/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/项目案例/ZaKer/templates/zaker-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3082">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kitchen/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="-2148">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/项目案例练习/爬虫/caipuwang/caipu.py">
+    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0003_auto_20190109_0956.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="4" column="120" lean-forward="true" selection-start-line="4" selection-start-column="120" selection-end-line="4" selection-end-column="147" />
+        <state relative-caret-position="-1149" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0004_auto_20190109_0959.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0005_menu_season.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0006_auto_20190110_1151.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/migrations/0007_mtype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/public.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/flash1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/js/MenuClassification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/G_fail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/G_fail.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/popularlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/tuijian.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/tuijian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/G_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/season.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/项目案例/ZaKer/templates/zaker-master/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="332" column="40" lean-forward="true" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/season.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="156" column="35" lean-forward="true" selection-start-line="156" selection-start-column="35" selection-end-line="156" selection-end-column="35" />
+        <state relative-caret-position="81">
+          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/xuancai.html" />
     <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="83" />
+        <state relative-caret-position="452">
+          <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/zhinengzc.css">
+    <entry file="file://$PROJECT_DIR$/little_kitchen/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="262">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/little_kitchen/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/flash2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="67" column="27" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/zhinengzc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="270">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/urls.py">
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/MenuClassification.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/groupfood.html">
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/MenuClassification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/grouplist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/caipuxq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="280" column="17" lean-forward="true" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/caipuxq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/groupfood.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        <state relative-caret-position="297">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="3" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/person.css">
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/find.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/views.py">
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/groupfood.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="84">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/DynamicDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-453">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/DynamicDetails.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/zhinengzc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <marker date="1547020279962" expanded="true" signature="381:384" ph="..." />
-            <marker date="1547020279962" expanded="true" signature="493:1782" ph="..." />
-            <marker date="1547020279962" expanded="true" signature="716:1782" ph="..." />
-            <marker date="1547020279962" expanded="true" signature="1732:1782" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/person.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#li#0;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#li#1;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#li#2;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#li#3;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#li#4;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#4;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#li#5;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#5;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#a#0;n#li#0;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#a#0;n#li#1;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kitchen/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="1566">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/static/kitchen/css/person.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1126">
+          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/templates/kitchen/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#h3#0;n#li#5;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#5;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#6;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitchen/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding>
+            <marker date="1547428393934" expanded="true" signature="3795:3797" ph="..." />
           </folding>
         </state>
       </provider>

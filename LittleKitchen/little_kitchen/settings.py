@@ -123,4 +123,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+# 静态文件 和 上传文件
+# 静态文件放置: css js img  正确渲染模板
+# 上传文件放置: 用户上传的内容
+# 区别： 静态文件一般不改变   上传文件随时改变
+
+# STATIC_ROOT = ""     # 部署服务器 整合静态文件的地址  以便服务器统一管理
+STATIC_URL = '/static/'    # 静态文件加载的地址
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'upload')
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'upload')   # 上传到项目中的根地址
+MEDIA_URL = '/media/'    #  上传文件的加载地址

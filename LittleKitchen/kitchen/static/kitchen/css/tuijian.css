@@ -1,0 +1,137 @@
+@import url(base.css);
+
+header{
+    width: auto;
+    height: 1.3rem;
+    border-bottom: 2px solid #eae9e9;
+}
+header .title{
+    width: auto;
+    height: 0.95rem;
+    padding-top: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header .title .tleft i{
+    display: block;
+    font-size: 26px;
+    color: #636262;
+    margin-left: 0.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.52rem;
+}
+header .title .tright{
+    font-size: 24px;
+    color: #898888;
+}
+.bg{
+    width: 100%;
+    height: auto;
+    background-color: #F7F5F6;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+}
+.bg .tuijian{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0.22rem;
+    
+}
+.bg .tuijian .box{
+    width: 3.39rem;
+    height: 3.3rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    background-color: aqua;
+    margin-top: 0.24rem;
+    position: relative;
+}
+.bg .tuijian .box .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    border-radius: 0.1rem;
+    background-color:rgba(253, 252, 252, 0.7);
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #44403B;
+    font-weight: bold;
+}
+.bg .tuijian .box .text img{
+    position: absolute;
+    width: 0.36rem;
+    right: 0.54rem;
+    top: 0.45rem;
+    transform: rotate(180deg);
+}
+.bg .tuijian .box .text img.img2{
+    left: 0.55rem;
+    transform: rotate(0);
+}
+.bg .food{
+    width: 100%;
+    height: 3.4rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    margin-top: 0.24rem;
+    position: relative;
+}
+.bg .food .mengban{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(253, 252, 252, 0.7);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.bg .food .mengban h2{
+    font-size: 0.32rem;
+    color: #F32D69;
+    text-align: center;
+    line-height: 0.32rem;
+    margin-top: 1.54rem;
+    position: relative;
+}
+.bg .food .mengban h2 span{
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background-color: #DA6387;
+    position: absolute;
+    right: 2.63rem;
+    top: 0.12rem;
+}
+.bg .food .mengban h2 span.span2{
+    left: 2.62rem;
+}
+.bg .food .mengban p{
+    font-size: 0.23rem;
+    color: #DF718A;
+    text-align: center;
+    line-height: 0.23rem;
+    font-weight: bold;
+    margin-top: 0.24rem;
+    position: relative;
+}
+.bg .food .mengban p span{
+    display: block;
+    width: 0.6rem;
+    height: 0.02rem;
+    position: absolute;
+    background-color: #F32D69;
+    right: 1.95rem;
+    top: 0.1rem;
+}
+.bg .food .mengban p .span2{
+    left: 1.95rem;
+}

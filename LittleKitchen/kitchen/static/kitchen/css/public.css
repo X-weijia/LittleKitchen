@@ -1,0 +1,14 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;/*li标签去掉默认样式*/
+    font-family: 微软雅黑;
+}
+a{
+    text-decoration: none;/*a标签去掉默认下划线*/
+}

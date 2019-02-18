@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人中心</title>
     <link rel="stylesheet" href="{% static 'kitchen/css/person.css' %}">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_cog7y7phd25.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_q3lpsfrsv9q.css">
     <script src="{% static 'kitchen/js/rem.js' %}"></script>
     <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
 </head>
@@ -16,14 +16,27 @@
     <header>
         <div class='title'>
             <div class="tleft">
-                <img class="photo" src="{% static 'kitchen/image/photo.png' %}" alt="">
+              {% if person.photo %}
+              <img class="photo" src="/media/{{ person.photo }}" alt="头像" style="width:80px;height:80px;">
+              {% else %}
+              <img class="photo" src="{% static 'kitchen/image/photo.png' %}" alt="头像">
+              {% endif %}
+                <!--<img class="photo" src="{% static 'kitchen/image/photo.png' %}" alt="">-->
             </div>
             <div class="tright">
+                {% if user == '' %}
                 <h3 style="font-size: 18px;
                             color:#f32d69;
                             margin-top:0.12rem;">
-                            小小厨
+                            {{ name }}
                         </h3>
+                {% else %}
+                <h3 style="font-size: 18px;
+                            color:#f32d69;
+                            margin-top:0.12rem;">
+                            {{ user }}
+                        </h3>
+                {% endif %}
                 <p style="font-size:14px;
                             color:#fabecc;
                             margin-top:0.12rem;">
@@ -92,7 +105,12 @@
                 <h3 style="font-size:16px;color:#8d8d8d;margin-left:14px;">设置</h3>
                 <a href="">
                     <i class="iconfont icon-iconfonticonfonti2copycopy" style="color:#8d8d8d;"></i>
-                </a>            
+                </a>
+            </li>
+            <li class="list" style="background-color:red;font-size:26px;color:#fff;">
+                <a href="{% url 'kitchen:log_out' %}" style="display:block;width:7.1rem;font-size:26px;color:#fff;text-align:center;">
+                    退出登录
+                </a>
             </li>
         </ul>
     </main>
@@ -100,13 +118,13 @@
     <footer>
         <ul>
             <li class="list">
-                <a href="">
+                <a href="{% url 'kitchen:index' %}">
                     <img src="{% static 'kitchen/image/sy.png' %}" alt="">
                     <h5 style="font-size:14px;color:#ccc;">首页</h5>
                 </a>
             </li>
             <li class="list">
-                <a href="">
+                <a href="{% url 'kitchen:index_find' %}">
                     <img src="{% static 'kitchen/image/fx.png' %}" alt="">
                     <h5 style="font-size:14px;color:#ccc;">发现</h5>
                 </a>
@@ -125,5 +143,34 @@
             </li>
         </ul>
     </footer>
+    <div class="tupian">
+        <i class="iconfont icon-guanbi" style="font-size:30px;position:absolute;left:5.1rem;top:0.2rem;"></i>
+        <form action="{% url 'kitchen:upload' %}" class="form-x" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+          <div class="form-group">
+            <div class="field">
+              {% if person.photo %}
+              <img class="sc_photo" src="/media/{{ person.photo }}" alt="头像" style="width:80px;height:80px;">
+              {% else %}
+              <img class="sc_photo" src="{% static 'kitchen/image/photo.png' %}" alt="头像">
+              {% endif %}
+                {{ form.as_p }}
+                <button>提交</button>
+            </div>
+          </div>
+        </form>
+    </div>
 </body>
+<script>
+    box = $(".photo")
+    tupian = $(".tupian")
+    box.click(function(){
+        tupian.css({"display":"block"})
+    })
+    end = $(".icon-guanbi")
+    end.click(function(){
+        tupian.css({"display":"none"})
+    })
+
+</script>
 </html>

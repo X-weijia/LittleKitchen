@@ -6,9 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>请等待</title>
-    <link rel="stylesheet" href="css/G_wait.css">
-    <script src="js/rem.js"></script>
-    <script src="js/jquery.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kitchen/css/G_wait.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
 </head>
 <body>
     <div class="login">
@@ -16,7 +17,7 @@
         <section class="title">
             <div class="title_con">
                 <div class="img_box">
-                    <img src="img/G_aa.png" alt="">
+                    <img src="{% static 'kitchen/img/G_aa.png' %}" alt="">
                 </div>
                 <h2>客官 <br> 欢迎来到小小厨</h2>
             </div>
@@ -26,20 +27,20 @@
                 <div class="info">
                     <div class="group">
                         <div class="img_box">
-                            <img src="img/G_ab.png" alt="">
+                            <img src="{% static 'kitchen/img/G_ab.png' %}" alt="">
                         </div>
                         <input type="text" name="username" placeholder="请填写您的手机号码 邮箱 用户名">
                     </div>
                     <div class="group">
                         <div class="img_box">
-                            <img src="img/G_ac.png" alt="">
+                            <img src="{% static 'kitchen/img/G_ac.png' %}" alt="">
                         </div>
                         <input type="password" name="password" placeholder="请填写您的用户密码 （6 16位）">
                     </div>
                 </div>
                 <div class="forget">
                     <div class="img_box">
-                        <img src="img/G_ad.png" alt="">
+                        <img src="{% static 'kitchen/img/G_ad.png' %}" alt="">
                     </div>
                     <span>密码丢失 轻松找回</span>
                 </div>
@@ -50,13 +51,13 @@
             <h4>第三方登录</h4>
             <div class="img_box">
                 <a href="">
-                    <img src="img/G_ae.png" alt="">
+                    <img src="{% static 'kitchen/img/G_ae.png' %}" alt="">
                 </a>
                 <a href="">
-                    <img src="img/G_af.png" alt="">
+                    <img src="{% static 'kitchen/img/G_af.png' %}" alt="">
                 </a>
                 <a href="">
-                    <img src="img/G_ag.png" alt="">
+                    <img src="{% static 'kitchen/img/G_ag.png' %}" alt="">
                 </a>
             </div>
         </section>
@@ -68,7 +69,20 @@
             <li class="point2"></li>
             <li class="point3"></li>
         </ul>
-        <p>loading...</p>
+        <p><a id="href" href="{% url 'kitchen:index' %}">loading...</a> <b id="wait">{{time}}</b></p>
     </div>
 </body>
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait');
+var href = document.getElementById('href').href;
+var interval = setInterval(function(){
+	var time = wait.innerHTML;
+	if(time <= 0) {
+		location.href = href;
+		clearInterval(interval);
+	};
+}, 1500);
+})();
+</script>
 </html>

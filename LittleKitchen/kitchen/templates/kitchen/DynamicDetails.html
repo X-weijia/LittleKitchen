@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kitchen/css/DynamicDetails.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<body>
+<!--<header>-->
+    <!--<div class="ShadowColor"></div>-->
+<!--</header>-->
+<section class="details">
+    <h1>详情</h1>
+    <a href="{% url 'kitchen:index_find' %}">
+        <div class="Return"></div>
+    </a>
+</section>
+<section class="subject">
+    <ul class="Template_One">
+        <li class="Information">
+            <!--<img src="" alt="">-->
+            <h2>{{ content.author }}</h2>
+            <h3>{{ content.u_time }}</h3>
+            <img src="" alt="">
+        </li>
+        <li class="BigPictureStyle">
+            <h4>{{ content.con }}</h4>
+            <img src="/static/kitchen/image/find/{{ content.img }}" alt="">
+            <img src="{% static 'kitchen/image/发布图片2.png' %}" alt="">
+        </li>
+        <li class="BrowseVolume">
+            <div class="BrowseVolume_Left">
+                <span>浏览628次</span>
+                <div class="Ball"></div>
+            </div>
+            <div class="BrowseVolume_Right">
+                <img src="{% static 'kitchen/image/点赞图片.png' %}" alt="">
+                <img src="{% static 'kitchen/image/留言图片.png' %}" alt="">
+                <img src="{% static 'kitchen/image/转发图片.png' %}" alt="">
+            </div>
+        </li>
+        <li class="PraisePoints">
+            <span>{{content.z_number }}人觉得很赞</span>
+            <img src="{% static 'kitchen/image/心形图片.png' %}" alt="" class="heartShaped">
+        </li>
+    </ul>
+    {% for i in comment %}
+    <ul class="Template_Two">
+        <li class="Information">
+            <!--<img src="" alt="">-->
+            <h2>{{ i.author }}</h2>
+            <h3>{{ i.u_time }}</h3>
+            <img src="" alt="">
+        </li>
+        <li class="Plaintext">
+            <span>{{ i.con }}</span>
+        </li>
+        <li class="PureTextFunction">
+            <img src="{% static 'kitchen/image/点赞图片.png' %}" alt="">
+            <img src="{% static 'kitchen/image/留言图片.png' %}" alt="">
+        </li>
+    </ul>
+    {% endfor %}
+    <!--<ul class="Template_Two">-->
+        <!--<li class="Information">-->
+            <!--&lt;!&ndash;<img src="" alt="">&ndash;&gt;-->
+            <!--<h2>狐狸先森</h2>-->
+            <!--<h3>09月08日  18：00</h3>-->
+            <!--<img src="" alt="">-->
+        <!--</li>-->
+        <!--<li class="Plaintext">-->
+            <!--<span>哇  好漂亮 看起来很好吃的样子</span>-->
+        <!--</li>-->
+        <!--<li class="PureTextFunction">-->
+            <!--<img src="{% static 'kitchen/image/点赞图片.png' %}" alt="">-->
+            <!--<img src="{% static 'kitchen/image/留言图片.png' %}" alt="">-->
+        <!--</li>-->
+    <!--</ul>-->
+
+</section>
+<footer>
+    <form action="/SubmitComments" method="post">
+        {% csrf_token %}
+            <input type="text" name="comment">
+            <input type="hidden" name="d_id" value="{{ d_id }}">
+            <button type="submit">提交</button>
+        </form>
+</footer>
+<script>
+
+</script>
+</body>
+</html>

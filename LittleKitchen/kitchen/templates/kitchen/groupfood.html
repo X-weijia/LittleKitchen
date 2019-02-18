@@ -28,33 +28,48 @@
         <ul>
             {% for item in sc %}
             <li class="list">
-                <img src="{{ item.img }}" alt="">
-                <div class="info">
-                    <div class="ileft">
-                        <h3 style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:18px;color:#737373;">{{ item.name }}</h3>
-                        <div style="height:0.35rem;display:flex;align-items:center;">
-                            <img src="{% static 'kitchen/image/tou.png' %}" alt="">
-                            <h4 style="font-size:12px;margin-left: 0.15rem;color: #b8b8b8;">乐悠厨房</h4>
+                    <img src="{{ item.img }}" alt="">
+                    <div class="info">
+                        <div class="ileft">
+                            <a href="/index/cpxq/{{ item.id }}">
+                                <h3 style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:18px;color:#737373;">{{ item.name }}</h3>
+                            </a>
+                            <div style="height:0.35rem;display:flex;align-items:center;">
+                                <img src="{% static 'kitchen/image/tou.png' %}" alt="">
+                                <h4 style="font-size:12px;margin-left: 0.15rem;color: #b8b8b8;">乐悠厨房</h4>
+                            </div>
+                            <div class="label">
+                                {% if bqlen == 1 %}
+                                <div class="ls">{{ biaoqian.0 }}</div>
+                                {% else %}
+                                <div class="ls">{{ biaoqian.0 }}</div>
+                                <div class="ls">{{ biaoqian.1 }}</div>
+                                {% endif %}
+                            </div>
                         </div>
-                        <div class="label">
-                            {% if bqlen == 1 %}
-                            <div class="ls">{{ biaoqian.0 }}</div>
-                            {% else %}
-                            <div class="ls">{{ biaoqian.0 }}</div>
-                            <div class="ls">{{ biaoqian.1 }}</div>
-                            {% endif %}
+                        <div class="iright">
+                            <div style="display:flex;justify-content: flex-end; margin: 0.9rem 0 0 0.55rem;">
+                                {% if item.score > 6 and item.score < 9 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% elif item.score > 3 and item.score < 6 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% elif item.score > 9 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% else %}
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% endif %}
+                            </div>
+                            <!--<h4>匹配度: <span>99%</span></h4>-->
                         </div>
                     </div>
-                    <div class="iright">
-                        <div style="display:flex;justify-content: flex-end; margin: 0.9rem 0 0 0.55rem;">
-                            <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
-                            <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
-                            <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
-                            <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
-                        </div>
-                        <h4>匹配度: <span>99%</span></h4>
-                    </div>
-                </div>
             </li>
             {% endfor %}
         </ul>

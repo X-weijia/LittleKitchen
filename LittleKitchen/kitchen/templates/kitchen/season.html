@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>时令推荐</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/season.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_udode20327p.css">
+    <link rel="stylesheet" href="{% static 'kitchen/swiper-4.4.6/dist/css/swiper.min.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="{% url 'kitchen:index' %}" class="tleft">
+                <i class="iconfont icon-jiantouarrowhead7"></i>
+            </a>
+            <h2 class="tright">
+                时令推荐
+            </h2>
+        </div>
+    </header>
+    <div class="bg">
+        <ul>
+            {% for item in data %}
+            <li>
+                <div class="food">
+                    <img style="margin-left:0;" src="{{ item.img }}" alt="">
+                </div>
+                <div class="right">
+                    <a href="/index/cpxq/{{ item.id }}">
+                        <h4 style="width:1.6rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:16px;color:#737373;">{{ item.name }}</h4>
+                    </a>
+                    <div class="user">
+                        <div class="head">
+                            <img src="{% static 'kitchen/img/season/head1_l.gif' %}" alt="">
+                        </div>
+                        <span>乐悠厨房</span>
+                    </div>
+                    <div class="state"><span>评分星级：</span></div>
+                    {% if item.score > 8 and item.score < 10 %}
+                    <img style="right:2.6rem;" src="{% static 'kitchen/img/season/hot_l.gif' %}" alt="" class="hot">
+                    {% endif %}
+                    <div class="stars">
+                        {% if item.score > 6 and item.score < 9 %}
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% elif item.score > 3 and item.score < 6 %}
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% elif item.score > 9 %}
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% else %}
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% endif %}
+                    </div>
+                    {% if item.id in ysc %}
+                    <div class="collection" c_id="{{ item.id }}">已收藏</div>
+                    {% else %}
+                    <div class="collection" c_id="{{ item.id }}">收藏</div>
+                    {% endif %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+<script>
+box = $(".collection")
+box.click(function(e){
+    let target = e.target
+    if(target.className == "collection"){
+        let c_id = $(target).attr("c_id")
+        console.log(c_id)
+        if($(target).text() == "收藏"){
+            let state = 'yes'
+            $.ajax({
+                url:"/index/shoucang",
+                type:"post",
+                data:{c_id:c_id,state:state},
+                success:function(e){
+                    $(target).text(e)
+                }
+            })
+        }else{
+            let state = 'no'
+            $.ajax({
+                url:"/index/shoucang",
+                type:"post",
+                data:{c_id:c_id,state:state},
+                success:function(e){
+                    $(target).text(e)
+                }
+            })
+        }
+    }
+})
+
+</script>
+</html>

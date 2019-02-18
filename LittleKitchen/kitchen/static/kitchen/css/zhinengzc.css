@@ -73,4 +73,5 @@ header .title .tright{
     margin: 3rem auto 0;
     box-shadow: 0 0 0.5rem 0.01rem #FDC238;
     border:none;
+    outline:none;
 }

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>闪屏二</title>
+<title>欢迎</title>
 {% load static %}
 <script src="{% static 'kitchen/js/rem.js' %}" ></script>
 <link rel="stylesheet" href="{% static 'kitchen/css/flash1.css' %}">
@@ -68,7 +68,12 @@
               pagination: {
                 el: '.swiper-pagination',
               },
-              
+               //回调函数，当Swiper切换到最后一个Slide时执行。
+              on:{
+                reachEnd: function(){
+                    setTimeout(function(){  window.open("/is_login", "_self") },200)
+                },
+              },
               // 如果需要前进后退按钮
               navigation: {
                 nextEl: '.swiper-button-next',

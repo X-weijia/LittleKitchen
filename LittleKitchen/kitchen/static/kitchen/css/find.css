@@ -1,0 +1,187 @@
+@import url(base.css);
+
+/* 头部开始 */
+header{
+    width: auto;
+    height: 1.3rem;
+    border-bottom: 2px solid #eae9e9;
+}
+header .title{
+    width: auto;
+    height: 0.95rem;
+    padding-top: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header .title .tleft i{
+    display: block;
+    font-size: 26px;
+    color: #636262;
+    margin-left: 0.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.52rem;
+}
+header .title .tright{
+    font-size: 24px;
+    color: #898888;
+}
+/* 头部结束 */
+
+.bg{
+    width: 100%;
+    height: auto;
+    background-color: #F7F5F6;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+}
+
+/* 按钮开始 */
+.bg .anniu{
+    width: 100%;
+    height: 1.15rem;
+    /* background-color: aqua; */
+    padding: 0 0.64rem;
+    padding-top: 0.46rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.bg .anniu button{
+    width: 2rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    outline: 0;
+    border: 0;
+}
+.bg .anniu button a.active{
+    background-color: #F32D6A;
+    color: #fff;
+    border:none;
+    line-height: 0.6rem;
+}
+.bg .anniu button a{
+    display: block;
+    width: 2rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    line-height: 0.56rem;
+    text-align: center;
+    box-sizing: border-box;
+    border:2px solid #F3A5BD;
+    color: #F3A5BD;
+    background-color: #F7F5F6;
+}
+/* 按钮结束 */
+
+/* 展示开始 */
+.show{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    
+    /* background-color:yellow; */
+}
+.show .box{
+    height: 5.14rem;
+    margin-top: 0.24rem;
+    padding-top: 0.24rem;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    padding-left: 0.24rem;
+    border-radius: 0.1rem;
+}
+.show .box .head{
+    display: flex;
+    justify-content: flex-start;
+    height: 0.35rem;
+    line-height: 0.35rem;
+}
+.show .box .head img{
+    width: 0.35rem;
+    height: 0.35rem;
+}
+.show .box .head h2{
+    font-size:0.28rem;
+    color: #707070;
+    margin-left: 0.12rem;
+}
+.show .box .time{
+    display: flex;
+    justify-content: flex-start;
+    height: 0.16rem;
+    line-height: 0.16rem;
+    color: #CBCBCB;
+    font-size: 0.16rem;
+    margin-top: 0.12rem;
+}
+.show .box .time span{
+    margin-left: 0.17rem;
+}
+.show .box .text{
+    color: #898989;
+    font-size: 0.22rem;
+    margin-top: 0.24rem;
+}
+.show .box .img{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.24rem;
+}
+.show .box .img img{
+    width: 2.03rem;
+    height: 2.19rem;
+    margin-left: 0.24rem;
+}
+.show .box .img img:first-child{
+    margin-left: 0;
+}
+.show .box .look{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.26rem;
+    line-height: 0.17rem;
+}
+.show .box .look .dian{
+    width: 0.04rem;
+    height: 0.04rem;
+    border-radius: 50%;
+    background-color: #25C85F;
+    margin-top: 0.09rem;
+    margin-right: 0.05rem;
+}
+.show .box .look p{
+    font-size: 0.17rem;
+    color: #C2C2C2;
+}
+.show .box .zan{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    height: 0.19rem;
+    line-height: 0.19rem;
+}
+.show .box .zan img{
+    height: 0.19rem;
+}
+.show .box .zan p{
+    margin-left: 0.12rem;
+    font-size: 0.17rem;
+    color: #C5C5C5;
+}
+.show .box .icon{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 0.71rem;
+    height: 0.24rem;
+    right: 0.23rem;
+    bottom: 0.9rem;
+}
+.show .box .icon img{
+    height: 0.24rem;
+}
+/* 展示结束 */

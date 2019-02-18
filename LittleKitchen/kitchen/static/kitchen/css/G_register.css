@@ -52,14 +52,13 @@ a{
     margin-right: auto;
     top:2.93rem;
     width:6.3rem;
-    height:5.56rem;
     border-radius: 0.1rem;
     background: rgb(230,45,102);
     overflow: hidden;
+    padding-bottom:0.3rem;
 }
 .info{
     width:100%;
-    height: 5.3rem;
     background: #fff;
 }
 
@@ -133,3 +132,6 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+

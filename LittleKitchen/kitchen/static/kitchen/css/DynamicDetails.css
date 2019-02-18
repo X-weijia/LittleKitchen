@@ -1,0 +1,253 @@
+@import url(public.css);
+/*1111111111*/
+header{
+    width: 7.5rem;
+    height: 0.4rem;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.ShadowColor{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.03);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*1111111111*/
+/*2222222222*/
+.details{
+    width: 7.5rem;
+    height: 1.05rem;
+    background: #f7f5f5;
+    border-bottom: 0.02rem solid #eae9e9;
+    box-sizing: border-box;
+    position: relative;
+}
+.details h1{
+    font-size: 0.34rem;
+    color: #555454;
+    text-align: center;
+    padding-top: 0.26rem;
+}
+.Return{
+    position: absolute;
+    width: 0.16rem;
+    height: 0.26rem;
+    /*background: blue;*/
+    left: 0.24rem;
+    top: 0.32rem;
+    background: url("../image/返回图片.png");
+    background-size: contain;
+}
+/*2222222222*/
+/*3333333333*/
+.subject{
+    width: 7.5rem;
+    background: #f7f5f5;
+    overflow: hidden;
+    padding-bottom:1.2rem;
+}
+.Template_One{
+    width: 7.02rem;
+    height: auto;
+    background: #ffffff;
+    border-radius: 0.16rem;
+    margin: 0.72rem auto 0;
+    overflow: hidden;
+}
+.Template_Two{
+    width: 7.02rem;
+    height: 2.04rem;
+    background: #ffffff;
+    border-radius: 0.16rem;
+    margin: 0.24rem auto 0;
+    overflow: hidden;
+}
+.Information{
+    width: auto;
+    height: 0.63rem;
+    /*background: orange;*/
+    margin: 0.24rem 0 0 0.24rem;
+    position: relative;
+}
+.Information h2 {
+    height: 0.32rem;
+    width: auto;
+    /*background: antiquewhite;*/
+    margin-left: 0.47rem;
+    font-size: 0.3rem;
+    line-height: 0.32rem;
+    color: #737373;
+    letter-spacing: 0.02rem;
+}
+.Information h3{
+    height: 0.16rem;
+    width: auto;
+    /*background: antiquewhite;*/
+    margin-top: 0.16rem;
+    font-size: xx-small;
+    line-height: 0.16rem;
+    color: #cacaca;
+    letter-spacing: 0.02rem;
+}
+.Information img{
+    width: 0.35rem;
+    height: 0.35rem;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: yellow;
+}
+.BigPictureStyle{
+    width: 6.36rem;
+    height: auto;
+    /*background: orange;*/
+    margin: 0.24rem 0 0 0.24rem;
+}
+.BigPictureStyle h4{
+    color: #666666;
+    width: auto;
+    height: auto;
+    font-size: 0.24rem;
+    letter-spacing: 0.02rem;
+}
+.BigPictureStyle img{
+    display: inline-block;
+    width: 2.03rem;
+    height: 2.19rem;
+    /*background: yellow;*/
+    border-radius: 0.18rem;
+    margin-top: 0.25rem;
+    border-top: 0.01rem solid #3c3c3c;
+    border-right: 0.01rem solid #424142;
+    border-bottom: 0.01rem solid #a1a1a0;
+    border-left: 0.01rem solid #abaaab;
+    box-sizing: border-box;
+}
+.BigPictureStyle img:nth-child(1){
+    margin-left: 0.24rem;
+}
+.BrowseVolume{
+    width: 6.54rem;
+    height: 0.22rem;
+    /*background: yellow;*/
+    margin: 0.24rem 0 0 0.24rem;
+}
+.BrowseVolume_Left{
+    width: 1.17rem;
+    height: 100%;
+    /*background: orange;*/
+    float: left;
+    position: relative;
+}
+.BrowseVolume_Right{
+    width: 1.16rem;
+    height: 100%;
+    /*background: black;*/
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+.BrowseVolume_Left span{
+    width: 100%;
+    height: 0.22rem;
+    font-size: 0.18rem;
+    color: #cacaca;
+    /*letter-spacing: 0.01rem;*/
+    line-height: 0.22rem;
+    display: block;
+    margin-left: 0.08rem;
+}
+.Ball{
+    width: 0.04rem;
+    height: 0.04rem;
+    background: #3cc362;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.09rem;
+    left: 0;
+}
+.Plaintext{
+    width: 3.65rem;
+    height: 0.2rem;
+    /*background: orange;*/
+    margin: 0.24rem 0 0 0.24rem;
+}
+.Plaintext span{
+    display: block;
+    line-height: 0.2rem;
+    font-size: 0.22rem;
+    color: #b8b8b8;
+}
+.BrowseVolume_Right img{
+    width: 0.22rem;
+    height: 0.22rem;
+}
+.PureTextFunction{
+    width: 0.7rem;
+    height: 0.22rem;
+    /*background: orange;*/
+    margin-top: 0.26rem;
+    margin-left: 6.09rem;
+    display: flex;
+    justify-content: space-between;
+}
+.PureTextFunction img{
+    width: 0.22rem;
+    height: 0.22rem;
+}
+.PraisePoints{
+    width: auto;
+    height: 0.23rem;
+    /*background: #3cc362;*/
+    margin: 0.26rem 0 0 0.24rem;
+    padding-bottom:0.24rem;
+    position: relative;
+}
+.PraisePoints span{
+    display: block;
+    font-size: xx-small;
+    color: #cacaca;
+    margin-left: 0.31rem;
+}
+.heartShaped{
+    display: block;
+    width: 0.18rem;
+    height: 0.18rem;
+    /*background: yellow;*/
+    position: absolute;
+    left: 0;
+    top: 0.02rem;
+}
+/*3333333333*/
+/*4444444444*/
+footer{
+    height:1rem;
+    width: 100%;
+    background: #bede79;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer input{
+    height: 0.68rem;
+    width: 5rem;
+    background: #f7fff2;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.15rem;
+}
+footer button{
+    width: 1.8rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    background: #e5f5d3;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.3rem;
+}
+/*4444444444*/

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜谱推荐</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kitchen/css/grouplist.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_cog7y7phd25.css">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<body>
+    <!-- 头部信息 -->
+    <header>
+        <div class="title">
+            <a href="" class="tleft">
+                <i class="iconfont icon-jiantouarrowhead7"></i>
+            </a>
+            <h2 class="tright">
+                菜谱推荐
+            </h2>
+        </div>
+    </header>
+    <!-- 内容主体 -->
+    <main>
+        <ul>
+            {% if menus %}
+            {% for item in menus %}
+            <li class="list">
+                <img src="{{ item.img }}" alt="">
+                <div class="info">
+                    <div style="width:3.0rem"  class="ileft">
+                        <a href="/index/cpxq/{{ item.id }}">
+                            <h3 style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:18px;color:#737373;">{{ item.name }}</h3>
+                        </a>
+                        <div style="height:0.35rem;display:flex;align-items:center;">
+                            <img src="{% static 'kitchen/img/caipufl/tou.png' %}" alt="">
+                            <h4 style="font-size:12px;margin-left: 0.15rem;color: #b8b8b8;">乐悠厨房</h4>
+                        </div>
+                        <div class="label">
+                            <div class="ls">主料:</div>
+                            <div class="ls">{{ item.ingres }}</div>
+                        </div>
+                    </div>
+                    <div style="margin-left:0.27rem;" class="iright">
+                        <div style="display:flex;justify-content: flex-end; margin: 0.9rem 0 0 0.55rem;">
+                            {% if item.score > 6 and item.score < 9 %}
+                            <img src="{% static 'kitchen/img/caipufl/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            {% elif item.score > 3 and item.score < 6 %}
+                            <img src="{% static 'kitchen/img/caipufl/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            {% elif item.score > 9 %}
+                            <img src="{% static 'kitchen/img/caipufl/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            {% else %}
+                            <img src="{% static 'kitchen/img/caipufl/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            <img src="{% static 'kitchen/img/caipufl/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                            {% endif %}
+                        </div>
+
+                        <h4>评分: <span>{{ item.score }}</span></h4>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+            {% else %}
+                <li style="font-weight:800;font-size:0.25rem;color:red;">暂时无法提供您所需要的菜谱！</li>
+            {% endif %}
+        </ul>
+    </main>
+</body>
+</html>

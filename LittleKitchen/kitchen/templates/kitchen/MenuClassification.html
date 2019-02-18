@@ -1,0 +1,138 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜谱分类</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kitchen/css/DynamicDetails.css' %}">
+    <link rel="stylesheet" href="{% static 'kitchen/css/MenuClassification.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+    <script src="{% static 'kitchen/js/MenuClassification.js' %}"></script>
+</head>
+<body>
+<style>
+    header{
+        width: 7.5rem;
+        height: 0.4rem;
+        position: relative;
+    }
+    .Return{
+    position: absolute;
+    width: 0.16rem;
+    height: 0.26rem;
+    /*background: blue;*/
+    left: 0.24rem;
+    top: 0.32rem;
+    background: url({% static 'kitchen/img/caipufl/返回图片.png' %});
+    background-size: contain;
+}
+</style>
+<header style="background-color: #f7f5f5;"></header>
+<section class="details">
+    <h1>菜谱详情</h1>
+    <a href="{% url 'kitchen:index' %}"><div class="Return" ></div></a>
+</section>
+<section class="subject">
+    <ul class="Classification">
+        <li>
+            <div class="style style1" style="background: #fcc23b">
+                <img src="{% static 'kitchen/img/caipufl/主食.png' %}" alt="">
+            </div>
+            <h1>菜系</h1>
+        </li>
+        <li>
+            <div class="style style3">
+                <img src="{% static 'kitchen/img/caipufl/场景.png' %}" alt="">
+            </div>
+            <h1>口味</h1>
+        </li>
+        <li>
+            <div class="style style5">
+                <img src="{% static 'kitchen/img/caipufl/文化.png' %}" alt="">
+            </div>
+            <h1>工艺</h1>
+        </li>
+    </ul>
+    <ul style="background-color:#f7f5f5" class="specific">
+        <li style="background-color:#f7f5f5; z-index:5">
+            {% for item in cuisine %}
+            <div  class="detailed" onclick="up( name='{{ item }}' )">
+                <h3>{{ item }}</h3>
+            </div>
+            {% endfor %}
+        </li>
+        <li style="background-color:#f7f5f5; z-index: 3">
+        {% for item in flavor %}
+        <div class="detailed" onclick="up( name ='{{ item }}')">
+            <h3>{{ item }}</h3>
+        </div>
+        {% endfor %}
+        </li>
+        <li style="background-color:#f7f5f5;z-index: 3">
+            {% for item in  technology %}
+            <div class="detailed" onclick="up( name='{{ item }}' )" >
+                <h3>{{ item }}</h3>
+            </div>
+            {% endfor %}
+        </li>
+    </ul>
+    <ul class="HotTags">
+        <h1>热门标签</h1>
+        <div class="Selected">
+
+        </div>
+    </ul>
+</section>
+<footer>
+    <div style="cursor:pointer;background-color:red" class="reset">重置</div>
+    <div style="cursor:pointer;background-color:#fac23f" class="sure">确定</div>
+</footer>
+<script>
+// 添加标签
+function up(name){
+   length = $(".TwoWords").length
+   if(length<3){
+       $(".Selected").append(
+       `
+            <div class="TwoWords" delete="${ name }" onclick="down( name='${ name }' )" >
+                <h2 >${ name }</h2>
+            </div>
+       `
+       )
+   }
+}
+// 删除标签
+function down(name){
+    data = $(`div[delete=${ name }]`)
+    data.remove()
+}
+// 重置按钮
+$(".reset").click(function(){
+    data = $(".TwoWords")
+    data.remove()
+})
+// 提交按钮
+$(".sure").click(function(){
+    length = $(".TwoWords").length
+    if(length==3){
+        data = []
+        $(".TwoWords h2").each(function(key,value){
+                data.push(value.innerText)
+        })
+        $.ajax({
+            url:'/dealwith/',
+            data:{'data':String(data)},
+            type:'post',
+            success:function(e){
+                $(document.body).html(e)
+            }
+        })
+    }
+})
+</script>
+</body>
+</html>

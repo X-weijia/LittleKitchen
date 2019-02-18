@@ -11,6 +11,26 @@
     <script src="{% static 'kitchen/js/rem.js' %}"></script>
     <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
 </head>
+<style>
+    .register{
+    display: block;
+    width:3.6rem;
+    height: 0.7rem;
+    background: #FCC137;
+    border-radius: 0.35rem;
+    font-size: 0.22rem;
+    color:#fadba2;
+    text-align: center;
+    line-height: 0.7rem;
+    position: absolute;
+    top:7.3rem;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
 <body>
     <div class="login">
         <header></header>
@@ -26,6 +46,7 @@
             <form style="height:6.0rem" action="/login/" method="post">
                 {% csrf_token %}
                 <div class="info">
+                    {{form.errors}}
                     <div class="group">
                         <div class="img_box">
                             <img src="{% static 'kitchen/image/G_ab.png' %}" alt="">
@@ -50,11 +71,12 @@
                     <div class="img_box">
                         <img src="{% static 'kitchen/image/G_ad.png' %}" alt="">
                     </div>
-                    <span>密码丢失 轻松找回</span>
+                    <a href=""><span>密码丢失 轻松找回</span></a>
                 </div>
                 <button type="submit" class="go" style="border:none;">立即登录</button>
-                <!--<a href="{% url 'kitchen:index_two' %}" class="go">立即登录</a>-->
+
             </form>
+                <a href="{% url 'kitchen:register' %}" class="register" style="#FA780A">注册</a>
         </section>
         <section class="third">
             <h4>第三方登录</h4>
@@ -77,6 +99,12 @@
     let login=$('.go')
     password.bind('input propertychange', function() {
         login.css('background','#FA780A')
+    });
+
+    let username=$('[name=username]')
+    let register=$('.register')
+    username.bind('input propertychange', function() {
+        register.css('background','#f7f2ec')
     });
 </script>
 </html>

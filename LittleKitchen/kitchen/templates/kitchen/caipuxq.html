@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜谱详情</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/caipuxq.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_udode20327p.css">
+    <link rel="stylesheet" href="{% static 'kitchen/swiper-4.4.6/dist/css/swiper.min.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <header>
+        <div class="title">
+            <a href="{% url 'kitchen:index' %}" class="tleft">
+                <i class="iconfont icon-jiantouarrowhead7"></i>
+            </a>
+            <h2 class="tright">
+                菜谱详情
+            </h2>
+        </div>
+    </header>
+    <!-- 头部结束 -->
+    <div class="bg">
+        <div class="video">
+            <img src="{% static 'kitchen/img/caipuxq/video_l.gif' %}" alt="">
+            <div class="kongjian">
+                <div class="left">
+                    <button>
+                        <img src="{% static 'kitchen/img/caipuxq/anniu1_l.gif' %}" alt="" class="vicon">
+                        <img src="{% static 'kitchen/img/caipuxq/anniu3_l.gif' %}" alt="">
+                    </button>
+                    <button>
+                        <img src="{% static 'kitchen/img/caipuxq/anniu2_l.gif' %}" alt="" class="vicon">
+                        <img src="{% static 'kitchen/img/caipuxq/anniu4_l.gif' %}" alt="">
+                    </button>                    
+                </div>
+                <div class="right">
+                    <span>0:03:26</span>
+                </div>
+            </div>
+        </div>
+        <!-- 菜谱开始 -->
+        <div class="main">
+            <div class="title">
+                <h2>{{ data.name }}</h2>
+                <div class="evaluate">
+                    <p>评分</p>
+                    <div class="stars">
+                        {% if score > 6 and score < 9 %}
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% elif score > 3 and score < 6 %}
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% elif score > 9 %}
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% else %}
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="look">
+                    <div class="box">
+                        <div class="dian"></div>
+                        <p>291人收藏</p>
+                    </div>
+                    <div class="box">
+                        <div class="dian"></div>
+                        <p>267次浏览</p>
+                    </div>
+                </div>
+                <dir class="icon">
+                    {% if dianzan == 0 %}
+                        <img class="dianzan0" onclick="dianzan({{ id }})" src="{% static 'kitchen/img/caipuxq/icon1_l.png' %}" alt="">
+                    {% else %}
+                        <img class="dianzan0" onclick="quxiao({{ id }})" src="{% static 'kitchen/img/caipuxq/icon2_l.png' %}" alt="">
+                    {% endif %}
+                    <img src="{% static 'kitchen/img/caipuxq/icon2_l.gif' %}" alt="">
+                </dir>
+            </div>
+            <div class="data" style="height:auto;padding-bottom:0.8rem;">
+                <div class="header">
+                    <div class="left">
+                        <div class="head"></div>
+                        <h4>食录集</h4>
+                    </div>
+                    <div class="right">
+                        {% if guanzhu == 0 %}
+                            <div onclick="guanzhu()" class="img">
+                                +关注
+                            </div>
+                        {% else %}
+                            <div onclick="quguan()" class="img">
+                                已关注
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dian"></div>
+                    <p>共发布88次</p>
+                </div>
+                <!--<div class="text">-->
+                    <!--往鸡蛋液里加入新鲜的蔬菜然后卷起来吃不仅<br>-->
+                    <!--颜色漂亮口感嫩滑味道也更丰富如果你吃<br>-->
+                    <!--腻了每天的白水煮蛋传统煎蛋不妨试试这个做法非常赞哦-->
+                <!--</div>-->
+                <div class="zhuliao" style="    margin-top:0.6rem;">
+                    <span></span>
+                    <h5>食材：</h5>
+                </div>
+                <div class="photos">
+                    {{ data.ingres }}
+                </div>
+            </div>
+            <div class="buzhou" style="padding-top:0.8rem;">
+                    <h5>步骤：</h5>
+                {{ step|safe }}
+            </div>
+        </div>
+        <!-- 菜谱结束 -->
+    </div>
+</body>
+<script>
+<!--点赞-->
+function dianzan(id){
+    $.ajax({
+        url:'/dianzan/',
+        data:{'is_zan':id},
+        type:'post',
+        success:function(){
+            $(".icon .dianzan0 ").attr('src',"{% static 'kitchen/img/caipuxq/icon2_l.png' %}")
+            $(".icon .dianzan0").attr('onclick',` quxiao(${ id })`)
+        }
+    })
+}
+<!--取消点赞-->
+function quxiao(id){
+    $.ajax({
+        url:'/quxiao/',
+        data:{'no_zan':id},
+        type:'post',
+        success:function(){
+            $(".icon .dianzan0 ").attr('src',"{% static 'kitchen/img/caipuxq/icon1_l.png' %}")
+            $(".icon .dianzan0").attr('onclick',` dianzan(${ id })`)
+        }
+    })
+}
+<!--关注-->
+function guanzhu(){
+    s = $(" .header .left h4 ").text()
+    $.ajax({
+        url:'/guanzhu/',
+        data:{'is_guan':s},
+        type:'post',
+        success:function(){
+             $(" .right .img ").text("已关注")
+             $(" .right .img ").attr('onclick',`quguan()`)
+        }
+    })
+}
+<!--取消关注-->
+function quguan(){
+    s = $(" .header .left h4 ").text()
+    $.ajax({
+        url:'/quguan/',
+        data:{'no_guan':s},
+        type:'post',
+        success:function(){
+             $(" .right .img ").text("+关注")
+             $(" .right .img ").attr('onclick',`guanzhu()`)
+        }
+    })
+}
+</script>
+</html>

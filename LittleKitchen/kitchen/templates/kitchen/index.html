@@ -19,13 +19,16 @@
                 <p>太原</p>
                 <span class="iconfont icon-iconfonticonfonti2"></span>
             </div>
-            <div class="min">
-                <input type="text" name="" id="" placeholder="请输入您要搜索的内容">
-                <img src="{% static 'kitchen/img/index2_l.gif' %}" alt="">
-            </div>
-            <div class="right">
-                <img src="{% static 'kitchen/img/index1_l.gif' %}" alt="">
-            </div>
+            <form action="/search/" method="post" style="display:flex;">
+                {% csrf_token %}
+                <div class="min">
+                    <input type="text" name="dish_name" id="" placeholder="请输入您要搜索菜名">
+                    <img src="{% static 'kitchen/img/index2_l.gif' %}" alt="">
+                </div>
+                <button class="right" type="submit">
+                    <img src="{% static 'kitchen/img/index1_l.gif' %}" alt="">
+                </button>
+            </form>
         </header>
         <!-- 顶部搜索结束 -->
         <!-- 轮播图开始 -->
@@ -56,7 +59,7 @@
                     </a>
                 </button>
                 <button class="menu">
-                    <a href="">
+                    <a href="{% url 'kitchen:menu' %}">
                         <img src="{% static 'kitchen/img/change1_l.png' %}" alt="">
                         <span>菜谱分类</span>
                     </a>
@@ -68,46 +71,40 @@
         <section class="season">
             <div class="top">
                 <h2>时令推荐</h2>
-                <p>查看全部 <span class="iconfont icon-iconfonticonfonti2copycopy"></span> </p>
+                <a href="{% url 'kitchen:sltj' %}">
+                    <p>查看全部 <span class="iconfont icon-iconfonticonfonti2copycopy"></span> </p>
+                </a>
             </div>
             <div class="main">
                 <ul>
+                    {% for item in data %}
                     <li>
-                        <a href="">
-                            <img src="{% static 'kitchen/img/season1_l.gif' %}" alt="" class="food">
-                            <h2>澳洲古饲韩式烤肉片</h2>
-                            <p> <span>已订购</span><i>680</i></p>
+                        <a href="/index/cpxq/{{ item.id }}">
+                            <img src="{{ item.img }}" alt="" class="food">
+                            <h2>{{ item.name }}</h2>
+                            <p> <span>评分星级：</span></p>
                             <div class="stars">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star2_l.gif' %}" alt="">
+                                {% if item.score > 6 and item.score < 9 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% elif item.score > 3 and item.score < 6 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% elif item.score > 9 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% else %}
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% endif %}
                             </div>
                         </a>
                     </li>
-                   <li>
-                        <a href="">
-                            <img src="{% static 'kitchen/img/season2_l.gif' %}" alt="" class="food">
-                            <h2>养生素菜三合</h2>
-                            <p> <span>已订购</span><i>680</i></p>
-                            <div class="stars">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star2_l.gif' %}" alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="{% static 'kitchen/img/season3_l.gif' %}" alt="" class="food">
-                            <h2>养生烩三鲜</h2>
-                            <p> <span>已订购</span><i>680</i></p>
-                            <div class="stars">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star2_l.gif' %}" alt="">
-                            </div>
-                        </a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
@@ -117,38 +114,42 @@
         <section class="popularity">
             <div class="top">
                 <h2>人气推荐</h2>
-                <p>查看全部 <span class="iconfont icon-iconfonticonfonti2copycopy"></span> </p>
+                <a href="{% url 'kitchen:popular' %}">
+                    <p>查看全部 <span class="iconfont icon-iconfonticonfonti2copycopy"></span> </p>
+                </a>
             </div>
             <div class="main">
                 <ul>
+                    {% for item in popular %}
                     <li>
-                        <a href="">
+                        <a href="/index/cpxq/{{ item.id }}">
                             <div class="img">
-                                <img src="{% static 'kitchen/img/lunbo3_l.png' %}" alt="" class="pfood">
+                                <img style="margin-left:0.65rem;" src="{{ item.img }}" alt="" class="pfood">
                             </div>
                             <p>养生菌菇锅</p>
                             <span>选自健康食材，精心烹制</span>
                             <div class="stars">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star2_l.gif' %}" alt="">
+                                {% if item.score > 6 and item.score < 9 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% elif item.score > 3 and item.score < 6 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% elif item.score > 9 %}
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/lxing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% else %}
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                <img src="{% static 'kitchen/image/axing.png' %}" alt="" style="display:block;width:0.23rem;height:0.32rem;margin:0;">
+                                {% endif %}
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <div class="img">
-                                <img src="{% static 'kitchen/img/lunbo2_l.png' %}" alt="" class="pfood" style="margin-left:-0.2rem;height:2.44rem">
-                            </div>
-                            <p>麻辣藤椒锅</p>
-                            <span>选自健康食材，精心烹制</span>
-                            <div class="stars">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star1_l.gif' %}" alt="">
-                                <img src="{% static 'kitchen/img/star2_l.gif' %}" alt="">
-                            </div> 
-                        </a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
@@ -156,11 +157,11 @@
         <!-- 底部开始 -->
         <footer>
             <div class="box">
-                <a href="" class="home">
+                <a href="javascript:;" class="home">
                     <img src="{% static 'kitchen/img/home1_l.png' %}" alt="">
                     <span style="color: #FDBB33;">首页</span>
                 </a>
-                <a href="" class="home">
+                <a href="{% url 'kitchen:index_find' %}" class="home">
                     <img src="{% static 'kitchen/img/find1_l.png' %}" alt="">
                     <span>发现</span>
                 </a>
@@ -168,7 +169,7 @@
                     <img src="{% static 'kitchen/img/shop1_l.png' %}" alt="">
                     <span>商城</span>
                 </a>
-                <a href="" class="home">
+                <a href="{% url 'kitchen:person' %}" class="home">
                     <img src="{% static 'kitchen/img/my1_l.png' %}" alt="">
                     <span>我的</span>
                 </a>
